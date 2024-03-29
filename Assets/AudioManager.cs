@@ -52,8 +52,6 @@ public class AudioManager : MonoBehaviour
             Debug.Log("Sound not Found");
         }
     }
-<<<<<<< Updated upstream
-=======
     public void ToggleMusic()
     {
         musicSource.mute = !musicSource.mute;
@@ -70,5 +68,4 @@ public class AudioManager : MonoBehaviour
     {
         sfxSource.volume = volume;
     }
->>>>>>> Stashed changes
 }
