@@ -1,3 +1,3 @@
-Mediapipe landmarks are normalized and if you want to change it to actual value need to multiplie with image size.
+Mediapipe landmarks are normalized and if you want to change them to actual value need to multiplie with the image size.
 
-Yolo landmarks are actulau values and if you want to normalized it, need to divide to image size.
+Yolo landmarks are actual values and if you want to normalize them, need to divide them into image sizes.
