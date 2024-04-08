@@ -8,7 +8,7 @@ using TMPro;
 public class MainMenu : MonoBehaviour
 {
     public TextMeshProUGUI history_text;
-    public string filePath = "Assets/HistoryFiles/history_text.txt";
+    
 
     public void PlayGame()
     {
@@ -37,15 +37,15 @@ public class MainMenu : MonoBehaviour
     public void HistoryButton()
     {
         AudioManager.instance.PlaySFX("Click_Button");
-        //string filePath = Application.persistentDataPath + "/savedata.txt";
-
+        string filePath = Path.Combine(Application.persistentDataPath , "/history_text.txt");
+        
         if (File.Exists(filePath))
         {
             // Read data from file
             // Read the text from the file
             string[] lines = File.ReadAllLines(filePath);
             string textToShow = string.Join("\n", lines);
-            print(textToShow);
+            //print(textToShow);
             history_text.text = textToShow;
         }
         else
