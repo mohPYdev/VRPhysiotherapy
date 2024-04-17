@@ -11,6 +11,8 @@
 /[Uu]ser[Ss]ettings/
 /socket/node_modules/
 /socket/venv/
+/Output_video_Yolo/
+/Output_video_mediapipe/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
