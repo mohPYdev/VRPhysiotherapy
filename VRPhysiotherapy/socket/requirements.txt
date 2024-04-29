@@ -1,0 +1,6 @@
+websocket
+numpy
+pandas
+opencv-python
+mediapipe
+websocket-client
