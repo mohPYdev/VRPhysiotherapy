@@ -1,12 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.SceneManagement;
-
+using TMPro;
 
 public class RayHit : MonoBehaviour
 {
+    public XRController leftHandController;
+    public XRController RighttHandController;
+
+    
     public GameObject textObject;
     public GameObject menu;
     public void active_text()
@@ -37,11 +42,12 @@ public class RayHit : MonoBehaviour
     }
     public void go_main_menu()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
     public void go_training()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
+
 }
 

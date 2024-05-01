@@ -17,29 +17,11 @@ public class CollisionCube : MonoBehaviour
         
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        test.SetActive(true);
-    }
 
-    void OnTriggerStay(Collider other)
+    private void OnCollisionEnter (Collision col)
     {
-        
-    }
 
-    void OnTriggerExit(Collider other)
-    {
         test.SetActive(false);
     }
 
-
-    public void start_collision()
-    {
-        test.SetActive(true);
-    }
-
-    public void stop_collision()
-    {
-        test.SetActive(false);
-    }
 }

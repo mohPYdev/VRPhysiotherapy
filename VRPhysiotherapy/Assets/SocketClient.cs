@@ -18,15 +18,35 @@ public class SocketClient : MonoBehaviour
     void Update()
     {
         a++;
-        if(ws == null)
+        if (ws == null)
         {
             return;
         }
 
-        if (a == 100)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            a = 0;
-            ws.Send("Hello");
-        }    
+            // Do something when space is pressed
+            Debug.Log("Space key pressed");
+            start_movement();
+        }
+
+        // Check if the enter key is pressed
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
+        {
+            // Do something when enter is pressed
+            Debug.Log("Enter key pressed");
+            end_movement();
+        }
+
+    }
+
+    public void start_movement()
+    {
+        ws.Send("Start");
+    }
+
+    public void end_movement()
+    {
+        ws.Send("End");
     }
 }
